@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo
+    container_name: masterweb
+    ports:
+      - 28017:27017
+    environment:
+      MONGO_INITDB_DATABASE: masters
+    volumes:
+      - ~/mongo/data:/data/db
+  postgres:
+    image: postgres:13.2-alpine
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: docker
+      POSTGRES_USER: postgres
+      POSTGRES_DB: masters
+    ports:
+      - 5001:5432

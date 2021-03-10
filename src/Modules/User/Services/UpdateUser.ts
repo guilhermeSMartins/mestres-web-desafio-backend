@@ -6,7 +6,6 @@ import { inject, injectable } from 'tsyringe';
 import UpdateUserDTO from '../Dtos/UpdateUserDTO';
 import UpdateUserResponseDTO from '../Dtos/UpdateUserResponseDTO';
 
-import User from '../Infra/Typeorm/Entities/User';
 import UsersRepositoryInterface from '../Repositories/UsersRepositoryInterface';
 
 @injectable()

@@ -1,5 +1,3 @@
-import User from '../Infra/Typeorm/Entities/User';
-
 export default interface UpdateUserDTO {
     username?: string;
 
@@ -9,4 +7,4 @@ export default interface UpdateUserDTO {
     is_admin?: boolean;
 
     id: string;
-};
+}

@@ -23,7 +23,7 @@ const authMiddleware = new AuthMiddleware();
 authRouter.use(authMiddleware.execute);
 
 authRouter.post(
-  '/signout/',
+  '/signout',
   authController.signOut,
 );
 

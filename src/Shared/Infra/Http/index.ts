@@ -15,8 +15,6 @@ const app = express();
 
 typeorm.execute();
 
-console.log(process.env.TEST);
-
 app.use(express.json());
 app.use(routes);
 app.use(celebrateErrors());

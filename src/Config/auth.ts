@@ -7,7 +7,7 @@ interface AuthConfig {
 
 export default {
   jwt: {
-    secret: '43022c2a-4233-4025-9b5b-1677a5b36bcf',
+    secret: process.env.JWT_SECRET,
     expiresIn: '1d',
   },
 } as AuthConfig;

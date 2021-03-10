@@ -1,3 +1,4 @@
+// retorna mensagem e código de erro
 class AppError {
   public readonly message: string;
 

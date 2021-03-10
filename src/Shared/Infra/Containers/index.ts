@@ -7,6 +7,7 @@ import ProductsRepository from '@Modules/Product/Infra/Typeorm/Repositories/Prod
 import AuthRepositoryInterface from '@Modules/Auth/Repositories/AuthRepositoryInterface';
 import AuthRepository from '@Modules/Auth/Infra/Typeorm/Repositories/AuthRepository';
 
+// Permite a injeção de repositórios
 container.registerSingleton<UsersRepositoryInterface>(
   'UsersRepository',
   UsersRepository,

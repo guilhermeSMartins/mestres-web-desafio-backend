@@ -1,7 +1,7 @@
 ## Como iniciar a aplicação
 Um arquivo .env deve ser criado com o secret do JWT, a chave é JWT_SECRET
 
-Após isto, basta rodar docker-compose up, yarn typeorm migrations:run yarn install, yarn build e yarn start
+Após isto, basta rodar docker-compose up, yarn typeorm migration:run yarn install, yarn build e yarn start
 
 
 ## Lógica
